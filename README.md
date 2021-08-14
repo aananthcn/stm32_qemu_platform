@@ -10,7 +10,7 @@ This project just integrates QEMU work by Askar and FreeRTOS work by Joseph
 
 The above steps should clone the modified Qemu by Askar and the modified FreeRTOS by Joseph into a single directory. The folder structure may look like this:
 
-`stm21_qemu_platform`<br>
+`stm32_qemu_platform`<br>
 `   ├── FreeRTOS`<br>
 `   ├── README.md`<br>
 `   ├── init-project.bat`<br>
