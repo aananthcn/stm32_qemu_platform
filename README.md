@@ -6,6 +6,7 @@ This project just integrates QEMU work by Askar and FreeRTOS work by Joseph
 * Open windows command-line (cmd).
 * Change directory to any of your workspace folder.
 * git clone https://github.com/aananthcn/stm32_qemu_platform.git
+* cd stm32_qemu_platform
 * Run `init-project` as command
 
 The above steps should clone the modified Qemu by Askar and the modified FreeRTOS by Joseph into a single directory. The folder structure may look like this:

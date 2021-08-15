@@ -2,9 +2,9 @@
 @echo off
 
 :: Global Variables
-set qemu_url="https://github.com/AskarKani/qemu.git"
-set freertos_url="https://github.com/joechz/FreeRTOS.git"
-set branch_name="st_cm4_gen"
+set qemu_url=https://github.com/AskarKani/qemu.git
+set freertos_url=https://github.com/joechz/FreeRTOS.git
+set branch_name=st_cm4_gen
 
 :: Disable strict key checks as FreeRTOS cloning is failing
 echo | set /p="Checking StrictHostKeyChecking in ~/.ssh/config ... "
@@ -25,6 +25,7 @@ if not exist qemu (
 )
 echo | set /p="Checking for FreeRTOS ... "
 if not exist FreeRTOS (
+  echo "git clone %freertos_url% --branch %branch_name% --recurse-submodules"
   git clone %freertos_url% --branch %branch_name% --recurse-submodules
 ) else (
   echo "Found!" 

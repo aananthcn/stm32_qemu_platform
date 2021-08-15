@@ -1,0 +1,120 @@
+    1  pacman -Syu
+    2  pacman -Su
+    3  pacman -S base-devel mingw-w64-x86_64-toolchain git python ninja
+    4  pacman -S base-devel mingw-w64-x86_64-toolchain git python ninja
+    5  pacman -S mingw-w64-x86_64-glib2 mingw64/mingw-w64-x86_64-gtk3 mingw64/mingw-w64-x86_64-SDL2 python-setuptools
+    6  cd /mingw64/bin/
+    7  ls
+    8  cp x86_64-w64-mingw32-gcc-ar.exe x86_64-w64-mingw32-ar.exe
+    9  cp x86_64-w64-mingw32-gcc-ranlib.exe x86_64-w64-mingw32-ranlib.exe
+   10  cp x86_64-w64-mingw32-gcc-ranlib.exe x86_64-w64-mingw32-ranlib.exe
+   11  cp nm.exe x86_64-w64-mingw32-nm.exe
+   12  cp objcopy.exe x86_64-w64-mingw32-objcopy.exe
+   13  cd ~
+   14  pwd
+   15  cd /mnt
+   16  cd /d/
+   17  pwd
+   18  ls
+   19  cd /e/projects/
+   20  ls
+   21  cd oss/
+   22  ls
+   23  cd stm32_qemu_platform/
+   24  ls
+   25  cd qemu/
+   26  ls
+   27  ./configure --cross-prefix=x86_64-w64-mingw32- --enable-gtk --enable-sdl
+   28  make
+   29  make -j8
+   30  make -j16
+   31  make -j8
+   32  make -j16
+   33  ls
+   34  make install
+   35  make install
+   36  find . -name qemu-system-aarch64.exe
+   37  cd build/
+   38  ls
+   39  ls *.dll
+   40  ls *.exe
+   41  list=ls *.exe
+   42  list=$(ls *.exe)
+   43  echo $list
+   44  for i in $list;   echo i
+   45  for i in $list;   echo $i
+   46  cp $(ls *.exe) /c/msys64/qemu/
+   47  find . -name *.dll
+   48  cp $(ls *.exe) /c/msys64/qemu/
+   49  pacman install liblzo
+   50  pacman -S liblzo
+   51  pacman -S liblzo.so
+   52  pacman -S mingw-w64-x86_64-lzo2
+   53  find / -name liblzo2-2.dll
+   54  cp /mingw64/bin/liblzo2-2.dll /c/msys64/qemu/
+   55  ls
+   56  cd /e/projects/oss/stm32_qemu_platform/qemu/build/
+   57  ls
+   58  qemu-system-arm
+   59  ./qemu-system-arm
+   60  pacman -S libzstd
+   61  ./qemu-system-arm
+   62  pwd
+   63  cd /e/projects/
+   64  ls
+   65  cd oss/
+   66  ls
+   67  cd stm32_qemu_platform/
+   68  ls
+   69  cd qemu/
+   70  ls
+   71  ./configure --cross-prefix=x86_64-w64-mingw32- --enable-gtk --enable-sdl
+   72  pacman -S mingw-w64-i686-python
+   73  pacman -S ninja
+   74  pacman -S pixman-1
+   75  pacman -S mingw-w64-i686-pixman
+   76  pacman -R glib2-devel
+   77  pacman -S mingw-w64-i686-glib2
+   78  ./configure --cross-prefix=x86_64-w64-mingw32- --enable-gtk --enable-sdl
+   79  cd /e/projects/oss/stm32_qemu_platform/qemu/
+   80  ./configure --cross-prefix=x86_64-w64-mingw32- --enable-gtk --enable-sdl
+   81  make clean
+   82  rm -rf build/
+   83  ./configure --cross-prefix=x86_64-w64-mingw32- --enable-gtk --enable-sdl
+   84  make -j 16
+   85   x86_64-w64-mingw32-gcc
+   86  make -j 16
+   87  make clean
+   88  ./configure --cross-prefix=x86_64-w64-mingw32- --enable-gtk --enable-sdl
+   89  make -j 16
+   90  make install
+   91  meson
+   92  meson
+   93  make install
+   94  make install
+   95  exit
+   96  cd /e/projects/oss/stm32_qemu_platform/
+   97  cd qemu/
+   98  make install
+   99  make install
+  100  make install
+  101  make install
+  102  make install
+  103  make install
+  104  make install
+  105  make install
+  106  x86_64-w64-mingw32-strip
+  107  find /usr/bin/ -name *strip*
+  108  find /usr/bin/ -name "*strip*"
+  109  find / -name "*strip*"
+  110  echo $path
+  111  echo $PATH
+  112  PATH=/opt/bin:$PATH
+  113  make install
+  114  find . -name liblzo2-2.dll
+  115  find / -name liblzo2-2.dll
+  116  cd /mingw64/bin/
+  117  ls
+  118  cp *.dll /c/msys64/qemu/
+  119  history
+  120  history > /e/projects/oss/stm32_qemu_platform/commands-history-aananth.txt
