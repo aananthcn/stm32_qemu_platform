@@ -21,14 +21,20 @@ echo | set /p="Checking for Qemu ... "
 if not exist qemu (
   git clone %qemu_url% --branch %branch_name%
 ) else (
-  echo "Found!" 
+  echo "Found! Updating repos to latest commits ..."
+  cd qemu
+  git pull
+  cd ..
 )
 echo | set /p="Checking for FreeRTOS ... "
 if not exist FreeRTOS (
   echo "git clone %freertos_url% --branch %branch_name% --recurse-submodules"
   git clone %freertos_url% --branch %branch_name% --recurse-submodules
 ) else (
-  echo "Found!" 
+  echo "Found! Updating repos to latest commits ..."
+  cd FreeRTOS
+  git pull --recurse-submodules
+  cd ..
 )
 
 
